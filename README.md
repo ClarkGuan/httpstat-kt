@@ -16,3 +16,10 @@ go install github.com/ClarkGuan/arun@latest
 # using arun to run you APK file on your device
 arun ./httpstat/build/outputs/apk/release/httpstat-release-unsigned.apk com.httpstat.kotlin.MainKt https://www.baidu.com/
 ```
+
+Also you can add `-c <retry counts>`:
+
+```shell
+arun ./httpstat/build/outputs/apk/release/httpstat-release-unsigned.apk com.httpstat.kotlin.MainKt -c 2 https://www.baidu.com/
+```
+
