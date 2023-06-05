@@ -10,6 +10,9 @@ We know that Android system using app_process (or app_process64 for 64 bit) to r
 # install arun to you $GOPATH/bin
 go install github.com/ClarkGuan/arun@latest
 
+# build httpstat-release-unsigned.apk
+./gradlew assembleRelease
+
 # using arun to run you APK file on your device
 arun ./httpstat/build/outputs/apk/release/httpstat-release-unsigned.apk com.httpstat.kotlin.MainKt https://www.baidu.com/
 ```
